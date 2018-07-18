@@ -19,13 +19,13 @@ logging.basicConfig(format='%(asctime)s %(levelname)s %(message)s',
 
 batch_size = 128
 n_train_data = 59904		# Number of RGB images
-n_epochs = 2				# Number of epochs to train for
+n_epochs = 100  				# Number of epochs to train for
 train = True
-restore = False				# Option to continue training from previous model
-save = True					# Save model every epoch 
-h = 48						# Image height
-w = 48						# Image width
-keep_rate = 1.0				# 1 - dropout rate
+restore = False			  	# Option to continue training from previous model
+save = True			    		# Save model every epoch 
+h = 48					      	# Image height
+w = 48			      			# Image width
+keep_rate = 1.0	  			# 1 - dropout rate
 
 # Train neural network
 logging.info("Training network")
