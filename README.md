@@ -13,6 +13,8 @@ Training data should be in the `./training set` folder. RGB images should be nam
 
 In `train.py`, ensure the variables in the list from `batch_size` to `keep_rate` are correct. 
 
+If `restore` is set to `True`, a previous model will first be loaded and training will resume. Change the path of the model being restored under the function `train_network` in `network.py`.
+
 To train the model, run `train.py`
 
 A model is saved every epoch in the `./model` folder, TensorBoard logs are saved under `./logs`. One prediction is saved per epoch under `./predictions training`.
